@@ -1,0 +1,22 @@
+body{
+    background-color:#336699;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+	background-color: none;
+	color: white;
+}
+i{
+	color:white
+}
+p{
+	color:white
+}
+h1{
+	color:white
+}
+a{
+	color:white
+}

@@ -1,0 +1,18 @@
+body{
+    background-color:#FECC66;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+	background-color: none;
+	color: black;
+}
+
+a:hover {
+  font-size: 150%;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
