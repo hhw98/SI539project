@@ -12,11 +12,23 @@ i{
 	color:white
 }
 p{
+	text-align:center;
 	color:white
 }
 h1{
+	text-align:center;
 	color:white
 }
 a{
 	color:white
+}
+
+a:hover {
+  font-size: 150%;
+}
+li:hover {
+  font-size: 150%;
+}
+i:hover {
+opacity: .5;
 }
