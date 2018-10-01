@@ -32,3 +32,6 @@ li:hover {
 i:hover {
 opacity: .5;
 }
+* {
+    box-sizing: border-box;
+}
