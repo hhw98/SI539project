@@ -1,6 +1,10 @@
 body{
     background-color:#336699;
 }
+/*p{
+  color:white;
+  text-align:center;
+}*/
 
 li{
 	text-decoration: none;
@@ -11,14 +15,8 @@ li{
 i{
 	color:white
 }
-p{
-	text-align:center;
-	color:white
-}
-h1{
-	text-align:center;
-	color:white
-}
+
+
 a{
 	color:white
 }
@@ -47,10 +45,35 @@ opacity: .5;
       font-family: 'Annie Use Your Telescope';
       font-size: 22px;
     }
-	
-	#introduction{
+    .cal p{
+      color: yellow;
+      text-align:center;    }
+
+    p.intro{
+      color: white;
+      text-align:center;
+    }
+
+  p.summary{
+    color: red;
+  }
+	.introduction p{
 		font-family: 'Lato', sans-serif;
+    color: white;
 	}
+header>h1{
+  color:yellow;
+  font-family: 'Charmonman', cursive;
+  text-align:center;
+}
+header>h2{
+  color:white;
+  text-align:center;
+}
+
+div.soc{
+  text-align: center;
+}
 
 /*style.css for index.html*/
 
@@ -95,4 +118,4 @@ body {
 }
 .item7 {
 	grid-area: 4 / 7 / 7 / 9;
-}	
+}
