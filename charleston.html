@@ -3,93 +3,98 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Charleston</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href='https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+  <title>Charleston</title>
   <style>
-    .mySlides {
-      display: none;
-    }
-
-    .float-img-l {
-      float: left;
-      margin-right: 10px;
-      margin-bottom: 5px;
-      border: solid black 1px;
-      padding: 2px;
-    }
-
-    .float-img-r {
-      float: right;
-      margin-right: 10px;
-      margin-bottom: 5px;
-      border: solid black 1px;
-      padding: 2px;
-    }
 
     img {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+    #image{
+      	line-height:325px;
+  		  width: 388px;
+      	height: 290px;
+  		border:0px solid black;
+  		margin:0 auto;
+      background-image:url("images/page3/IMG_3253.JPG");
+      	background-repeat: no-repeat;
+      	color:#FFFFFF;
+      	text-align: center;
+      	background-color: #8e68ff;
+      	background-size: 100%;
+      	margin-bottom:25px;
+      	font-size:150%;
+  	}
 
-    body {
-      font-family: 'Annie Use Your Telescope';
-      font-size: 22px;
-    }
   </style>
 </head>
 
-<body>
+<body class='body_c'bgcolor='#D8C3A5'>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" aria-label="first link"><i class="fas fa-home"></i></a></li>
-        <li><a href="california.html">california</a></li>
-        <li><a href="charleston.html">charleston</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </nav>
-    <h1>Charleston</h1>
-    </header>
-    <div class="cal">
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <ul class="sidenav">
+      <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+      <li><a href="california.html">California</a></li>
+      <li><a class="active" href="charleston.html">Charleston</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+
+<main id="main" class="content">
+<h1>Volunteer in  Charleston</h1>
+    <div>
       <p>I joined California Alternative for Break when I was a senior. We drove to Charleston in South Carolina and serviced children there. We had lots of fun there and enjoyed beaches there!</p>
     </div>
 
-  <div class="w3-content w3-display-container">
-    <img class="mySlides" src="images/page3/IMG_3253.JPG" style="width:100%" alt="">
-    <img class="mySlides" src="images/page3/IMG_3257.JPG" style="width:100%" alt="">
-    <img class="mySlides" src="images/page3/IMG_3260.JPG" style="width:100%" alt="">
+    <div id = "image">
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+
+  <div class="flex-container">
+    <div>
+        <img src="images/page3/IMG_3253.JPG" style="width:100%" alt="image1">
+    </div>
+    <div>
+        <img src="images/page3/IMG_3257.JPG" style="width:100%" alt="image2">
+    </div>
+    <div>
+        <img src="images/page3/IMG_4605.JPG" style="width:100%" alt="imag3">
+    </div>
+<div>
+        <img src="images/page3/IMG_4618.JPG" style="width:100%" alt="imag4">
+    </div>
   </div>
+
   <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = x.length
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-  </script>
-
+	$(document).ready(function(){
+		$("img").mouseover(function(){
+			$("#image").css("background-image","url('"+$(this).attr("src")+"')");
+      $("#image").html("");
+		})
+    $("img").click(function(){
+      $("#image").css("background-image","none");
+      $("#image").css("background-color","#333");
+			$("#image").html($(this).attr("alt"));
+		})
+		$("img").mouseout(function(){
+			$("#image").css("background-image","url('"+"images/page3/IMG_3253.JPG"+"')");
+			$("#image").html("");
+		})
+	});
+	</script>
+</main>
+<footer class='footer'>
+  <p>@2018 Haiyan Hu</p>
+</footer>
 </body>
-
 </html>
