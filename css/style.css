@@ -276,7 +276,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: #ffcc66;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -290,7 +290,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #ff9900;
 }
 
 .accordion:after {
