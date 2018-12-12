@@ -312,10 +312,7 @@ a.skip-main:focus, a.skip-main:active {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-body {
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
+
 
 /*form style*/
 /* Style inputs */
@@ -375,3 +372,8 @@ input[type=submit]:hover {
     .mySlides {
       display: none;
     }
+	
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}	
