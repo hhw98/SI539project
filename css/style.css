@@ -47,7 +47,6 @@ footer{
       margin-right: 50px;
 	  margin-top: 50px;
       margin-bottom: 50px;
-      border: solid black 1px;
       padding: 2px;
     }
 .intro{
@@ -371,3 +370,8 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+
+
+    .mySlides {
+      display: none;
+    }
