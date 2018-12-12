@@ -12,10 +12,6 @@ h1,h2{
 	color:white;
 	text-align:center;
 }
-body {
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
 
 /*
 .topnav {
@@ -56,7 +52,7 @@ footer{
     }
 .intro{
 	  margin-left: 100px;
-	  margin-top: 150px;
+	  margin-top: 50px;
       margin-bottom: 50px;
 }
 
@@ -96,7 +92,7 @@ footer{
     height: 1000px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     ul.sidenav {
       width: 100%;
       height: auto;
@@ -119,10 +115,13 @@ footer{
   }
 /*css for lightbox*/
 .center{
-  margin: 50px 50px 150px 150px;	
+  margin: 50px 50px 150px 150px;
 }
 .grid {
   position: relative;
+}
+.zindex{
+	z-index: -1;
 }
 
 .item {
@@ -274,4 +273,101 @@ a.skip-main:focus, a.skip-main:active {
   background-repeat: repeat;
   background-size: 100% 100%;
   background-position: center;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  width: 50%;
+  text-align:center;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*form style*/
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: center;
+  width: 70%;
+  margin-top: 6px;
+  margin-left: 100px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.columntext {
+  float: right;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
