@@ -380,19 +380,3 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }	
 
-/*third page*/
-    #image{
-      	line-height:325px;
-  		  width: 388px;
-      	height: 290px;
-  		border:0px solid black;
-  		margin:0 auto;
-      background-image:url("../images/page3/IMG_3253.JPG");
-      	background-repeat: no-repeat;
-      	color:#FFFFFF;
-      	text-align: center;
-      	background-color: #8e68ff;
-      	background-size: 100%;
-      	margin-bottom:25px;
-      	font-size:150%;
-  	}
