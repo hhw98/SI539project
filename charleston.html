@@ -29,6 +29,7 @@
 
 <main id="main" class="content">
 <h1>Volunteer in  Charleston</h1>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div>
       <p>I joined California Alternative for Break when I was a senior. We drove to Charleston in South Carolina and serviced children there. We had lots of fun there and enjoyed beaches there!</p>
     </div>
@@ -68,6 +69,20 @@
 			$("#image").html("");
 		})
 	});
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }	
 	</script>
 </main>
 <footer class='footer'>

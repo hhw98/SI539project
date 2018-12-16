@@ -25,6 +25,7 @@
 
   </header>
 <main id="main" class="content">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div class="column">
       <!--  <img src="images/profile/IMG_4869.JPG" style="width:200px" class="center" alt="Avatar" />-->
       <h1>Want to leave me a message?</h1>
@@ -51,6 +52,22 @@
     <a href="https://www.instagram.com/" aria-label="forth link"><i class="fab fa-instagram fa-2x" style="color:#b30086"></i></a>
     <a href="https://weixin.qq.com/" aria-label="fifth link"><i class="fab fa-weixin fa-2x" style="color:#00cc00"></i></a>
   </div>-->
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>  
 </main>
     <footer class='footer'>
       <p>Copyright &copy; 2018 <a href="mailto:hhy@umich.edu">Haiyan Hu<i class="far fa-envelope"></i></a></p>
